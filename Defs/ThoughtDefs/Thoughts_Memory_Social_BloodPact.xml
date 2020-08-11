@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef Name="BloodPactSocial_Base" Abstract="True">
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <showBubble>true</showBubble>
+    <stackLimit>300</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <stackedEffectMultiplier>0.6</stackedEffectMultiplier>
+  </ThoughtDef>
+  <ThoughtDef ParentName="BloodPactSocial_Base">
+    <defName>BloodPactReject</defName>
+    <durationDays>20.0</durationDays>
+    <stackedEffectMultiplier>0.8</stackedEffectMultiplier>
+    <stackLimitForSameOtherPawn>5</stackLimitForSameOtherPawn>
+    <stages>
+      <li>
+        <label>rejected me for a blood pact</label>
+        <description>I feel insulted.</description>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef ParentName="BloodPactSocial_Base">
+    <defName>BloodPactWentBerserk</defName>
+    <icon>Things/Mote/ThoughtSymbol/RitualBerserk</icon>
+    <showBubble>true</showBubble>
+    <durationDays>30.0</durationDays>
+    <stages>
+      <li>
+        <label>revolted against blood pact</label>
+        <description>I. DO NOT. WANT. THIS.</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+        <baseOpinionOffset>-20</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef ParentName="BloodPactSocial_Base">
+    <defName>BloodPactForcedPact</defName>
+    <durationDays>120.0</durationDays>
+    <stages>
+      <li>
+        <label>forced into a blood pact</label>
+        <description>My life is not my own anymore. I hate this colony.</description>
+        <baseOpinionOffset>-50</baseOpinionOffset>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

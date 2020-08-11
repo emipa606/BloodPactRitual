@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_BloodRitualKnife</defName>
+    <label>blood ritual shiv</label>
+    <description>A one-use knife for making a blood pact. Make one of your colonist attack another to create an indestructible and permanent bond between them. Better be carefull with this thing.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Shiv</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(150, 0, 0)</color>
+    </graphicData>
+    <costList>
+      <WoodLog>5</WoodLog>
+      <Jade>10</Jade>
+    </costList>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <Mass>0.5</Mass>
+    </statBases>
+    <weaponTags Inherit="False">
+      <!--<li>Melee</li> NOPE, you raider won't use it-->
+    </weaponTags>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>RitualBloodPactInjury</li>
+        </capacities>
+        <power>21</power>
+        <cooldownTime>5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ToolCapacityDef>
+    <defName>RitualBloodPactInjury</defName>
+    <label>RitualBloodPactInjury</label>
+  </ToolCapacityDef>
+  <ManeuverDef>
+    <defName>RitualBloodPactInjury</defName>
+    <requiredCapacity>RitualBloodPactInjury</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>RitualBloodPactInjury</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Poke_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Poke_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Poke_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Poke_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+</Defs>

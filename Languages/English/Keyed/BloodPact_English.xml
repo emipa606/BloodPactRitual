@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Messages -->
+  <BloodPact_NewPactWithChance_Title>New blood pact</BloodPact_NewPactWithChance_Title>
+  <BloodPact_NewPactWithChance_Content>{0} and {1} successfuly made an everlasting blood pact ({2} chance)!
+
+They will from now on share happiness, sadness, injuries... and death.</BloodPact_NewPactWithChance_Content>
+  <BloodPact_NewPact_Title>New blood pact</BloodPact_NewPact_Title>
+  <BloodPact_NewPact_Content>{0} and {1} just made an everlasting blood pact ! They will from now on share happiness, sadness, injuries... and death.</BloodPact_NewPact_Content>
+  <BloodPact_RecruitByPact_Title>New recruit (blood pact)</BloodPact_RecruitByPact_Title>
+  <BloodPact_RecruitByPact_Content>{0} forced {1} to join the colony through a blood pact.
+
+Forever linked, they will from now on share happiness, sadness, injuries... and death.</BloodPact_RecruitByPact_Content>
+  <BloodPact_RecruitByPactWithChance_Title>New recruit (blood pact)</BloodPact_RecruitByPactWithChance_Title>
+  <BloodPact_RecruitByPactWithChance_Content>{0} successfuly recruited {1} through a blood pact ({2} chance).
+
+Forever linked, they will from now on share happiness, sadness, injuries... and death.</BloodPact_RecruitByPactWithChance_Content>
+  <BloodPact_TextMote_NewPact>Blood pact!</BloodPact_TextMote_NewPact>
+  <BloodPact_TextMote_NewPactFailed>Blood pact failed! ({0} chance)</BloodPact_TextMote_NewPactFailed>
+  <BloodPact_Death_Title>Blood Pact Death</BloodPact_Death_Title>
+  <BloodPact_Death_Content>{0} followed {1} into death.</BloodPact_Death_Content>
+  <BloodPact_Obsolete_Title>Blood Pact Removed</BloodPact_Obsolete_Title>
+  <BloodPact_Obsolete_Content>{0} no longer has a blood pact. It was probably obsolete or never meant to be.</BloodPact_Obsolete_Content>
+  <BloodPact_Attempt_MindBreak>blood pact order</BloodPact_Attempt_MindBreak>
+  <!-- Settings -->
+  <BloodPact_Setting_Animal_Title>Allow blood pacts with animals</BloodPact_Setting_Animal_Title>
+  <BloodPact_Setting_Animal_Desc>Your colonists can make blood pacts with tamed animals. The pact power will be based on the presence (or absence) of a Bond between the two, but will be on the low side.
+As some animals are fairly strong (Thrumbo), this might create some unbalance.</BloodPact_Setting_Animal_Desc>
+  <BloodPact_Setting_Prisoner_Title>Recruit prisoners with blood pact</BloodPact_Setting_Prisoner_Title>
+  <BloodPact_Setting_Prisoner_Desc>Prisoners may be forced into your colony by creating a blood pact between them and one of your colonist. They might be quite unhappy about it though.</BloodPact_Setting_Prisoner_Desc>
+  <BloodPact_Setting_Revolt_Title>Allow pawn revolt</BloodPact_Setting_Revolt_Title>
+  <BloodPact_Setting_Revolt_Desc>Involved pawns may botch a blood pact ritual by going berserk if they strongly oppose to it. If they're not able to revolt (option is disabled, or downed pawns) they will get a strong mood debuff instead.
+ - colonists: based on mood, and opinion of the other pawn
+ - prisoner: based on (improved) recruit chance, which also involves opinion and mood.
+ - animals: based on Bond. An animal have the most chance to revolt when the colonist it shares a bond with is not the one involved in the blood pact</BloodPact_Setting_Revolt_Desc>
+  <BloodPact_Setting_Tendable_Title>Pact shared damage needs tending</BloodPact_Setting_Tendable_Title>
+  <BloodPact_Setting_Tendable_Desc>When damage is shared through a blood pact, the shared part will bleed and need tending.</BloodPact_Setting_Tendable_Desc>
+
+</LanguageData>

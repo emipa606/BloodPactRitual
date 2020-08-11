@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- shared damages -->
+  <HediffDef Name="InjuryRitualBloodPactAbstract" ParentName="InjuryBase" Abstract="True">
+    <label>blood pact</label>
+    <description>blood pact</description>
+    <tendable>true</tendable>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>healed</labelTendedWell>
+        <labelTendedWellInner>healed</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.05</infectionChance>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0125</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.015</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>Roten</destroyedLabel>
+    </injuryProps>
+  </HediffDef>
+  <HediffDef ParentName="InjuryRitualBloodPactAbstract">
+    <defName>RitualBloodPactSharedTendable</defName>
+  </HediffDef>
+  <HediffDef ParentName="InjuryRitualBloodPactAbstract">
+    <defName>RitualBloodPactShared</defName>
+    <hediffClass>Blood_Pact_Ritual.BloodPactRitual.HediffInjuryAutoTend</hediffClass>
+  </HediffDef>
+</Defs>

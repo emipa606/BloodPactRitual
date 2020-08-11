@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>BloodPactRelation</defName>
+    <workerClass>Blood_Pact_Ritual.BloodPactRitual.ThoughtWorkerPactRelation</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>trust in blood pact</label>
+        <description>I trust them, and they trust me. Together we are invincibles.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+      <li>
+        <label>liking blood pact</label>
+        <description>I'm glad to have a bond with such a nice person.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>approving blood pact</label>
+        <description>I feel... stronger.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>worried about blood pact</label>
+        <description>I made a blood pact with someone I really like... but it's not mutual.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+      <li>
+        <label>disaproving blood pact</label>
+        <description>They like me... I don't. At least they won't try to hurt me.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+      <li>
+        <label>anxious about blood pact</label>
+        <description>I know they hate me... that can't be good.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>hating blood pact</label>
+        <description>I hate this jerk ! Why do I have to put up with this ?</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>loathing blood pact</label>
+        <description>If I die, they die. Might be worth it.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>BloodPactDanger</defName>
+    <workerClass>Blood_Pact_Ritual.BloodPactRitual.ThoughtWorkerPactDanger</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>long distance blood pact</label>
+        <description>I can't help feeling upset. What if something happens ?</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>blood pact kidnaped</label>
+        <description>We need to do something about this ! Now !</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

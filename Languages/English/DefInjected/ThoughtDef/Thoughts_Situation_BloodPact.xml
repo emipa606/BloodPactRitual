@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BloodPactRelation.stages.0.label>trust in blood pact</BloodPactRelation.stages.0.label>
+  <BloodPactRelation.stages.0.description>I trust them, and they trust me. Together we are invincibles.</BloodPactRelation.stages.0.description>
+  <BloodPactRelation.stages.1.label>liking blood pact</BloodPactRelation.stages.1.label>
+  <BloodPactRelation.stages.1.description>I'm glad to have a bond with such a nice person.</BloodPactRelation.stages.1.description>
+  <BloodPactRelation.stages.2.label>approving blood pact</BloodPactRelation.stages.2.label>
+  <BloodPactRelation.stages.2.description>I feel... stronger.</BloodPactRelation.stages.2.description>
+  <BloodPactRelation.stages.3.label>worried about blood pact</BloodPactRelation.stages.3.label>
+  <BloodPactRelation.stages.3.description>I made a blood pact with someone I really like... but it's not mutual.</BloodPactRelation.stages.3.description>
+  <BloodPactRelation.stages.4.label>disaproving blood pact</BloodPactRelation.stages.4.label>
+  <BloodPactRelation.stages.4.description>They like me... I don't. At least they won't try to hurt me.</BloodPactRelation.stages.4.description>
+  <BloodPactRelation.stages.5.label>anxious about blood pact</BloodPactRelation.stages.5.label>
+  <BloodPactRelation.stages.5.description>I know they hate me... that can't be good.</BloodPactRelation.stages.5.description>
+  <BloodPactRelation.stages.6.label>hating blood pact</BloodPactRelation.stages.6.label>
+  <BloodPactRelation.stages.6.description>I hate this jerk ! Why do I have to put up with this ?</BloodPactRelation.stages.6.description>
+  <BloodPactRelation.stages.7.label>loathing blood pact</BloodPactRelation.stages.7.label>
+  <BloodPactRelation.stages.7.description>If I die, they die. Might be worth it.</BloodPactRelation.stages.7.description>
+
+  <BloodPactDanger.stages.0.label>long distance blood pact</BloodPactDanger.stages.0.label>
+  <BloodPactDanger.stages.0.description>I can't help feeling upset. What if something happens ?</BloodPactDanger.stages.0.description>
+  <BloodPactDanger.stages.1.label>blood pact kidnaped</BloodPactDanger.stages.1.label>
+  <BloodPactDanger.stages.1.description>We need to do something about this ! Now !</BloodPactDanger.stages.1.description>
+
+
+</LanguageData>

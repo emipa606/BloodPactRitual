@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnRelationDef>
+    <defName>PawnRelationBloodPact</defName>
+    <label>Blood Pact</label>
+    <reflexive>true</reflexive>
+    <romanceChanceFactor>1</romanceChanceFactor>
+    <importance>201</importance>
+    <opinionOffset>20</opinionOffset>
+  </PawnRelationDef>
+</Defs>

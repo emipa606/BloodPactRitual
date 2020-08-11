@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BloodPactReject.stages.0.label>rejected me for a blood pact</BloodPactReject.stages.0.label>
+  <BloodPactReject.stages.0.description>I feel insulted.</BloodPactReject.stages.0.description>
+
+  <BloodPactWentBerserk.stages.0.label>revolted against blood pact</BloodPactWentBerserk.stages.0.label>
+  <BloodPactWentBerserk.stages.0.description>I. DO NOT. WANT. THIS.</BloodPactWentBerserk.stages.0.description>
+
+  <BloodPactForcedPact.stages.0.label>forced into a blood pact</BloodPactForcedPact.stages.0.label>
+  <BloodPactForcedPact.stages.0.description>My life is not my own anymore. I hate this colony.</BloodPactForcedPact.stages.0.description>
+
+
+</LanguageData>

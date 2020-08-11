@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Ritual creation proc -->
+  <DamageDef>
+    <defName>RitualBloodPactInjury</defName>
+    <label>cut</label>
+    <workerClass>Blood_Pact_Ritual.BloodPactRitual.DamageWorkerRitualBloodPact</workerClass>
+    <deathMessage>{0} has been cut to death.</deathMessage>
+    <externalViolence>false</externalViolence>
+    <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory />
+  </DamageDef>
+  <!-- Ritual creation symbolic damage -->
+  <DamageDef ParentName="CutBase">
+    <defName>RitualBloodPactSymbolicInjury</defName>
+    <label>blood pact cut</label>
+    <deathMessage>{0} has died during a blood pact ritual.</deathMessage>
+    <externalViolence>false</externalViolence>
+    <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+    <hasForcefulImpact>false</hasForcefulImpact>
+    <canInterruptJobs>false</canInterruptJobs>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory />
+  </DamageDef>
+  <!-- Shared damage type -->
+  <DamageDef ParentName="CutBase">
+    <defName>RitualBloodPactInjuryShared</defName>
+    <label>blood pact</label>
+    <deathMessage>{0} took one too many shared damage.</deathMessage>
+    <hediff>RitualBloodPactShared</hediff>
+    <externalViolence>false</externalViolence>
+    <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+    <impactSoundType />
+    <armorCategory />
+  </DamageDef>
+  <DamageDef ParentName="CutBase">
+    <defName>RitualBloodPactInjurySharedTendable</defName>
+    <label>blood pact</label>
+    <deathMessage>{0} took one too many shared damage.</deathMessage>
+    <hediff>RitualBloodPactSharedTendable</hediff>
+    <externalViolence>false</externalViolence>
+    <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+    <impactSoundType />
+    <armorCategory />
+  </DamageDef>
+</Defs>
