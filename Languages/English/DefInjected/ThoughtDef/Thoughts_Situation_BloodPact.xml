@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <BloodPactRelation.stages.0.label>trust in blood pact</BloodPactRelation.stages.0.label>
   <BloodPactRelation.stages.0.description>I trust them, and they trust me. Together we are invincibles.</BloodPactRelation.stages.0.description>
   <BloodPactRelation.stages.1.label>liking blood pact</BloodPactRelation.stages.1.label>
@@ -17,11 +16,8 @@
   <BloodPactRelation.stages.6.description>I hate this jerk ! Why do I have to put up with this ?</BloodPactRelation.stages.6.description>
   <BloodPactRelation.stages.7.label>loathing blood pact</BloodPactRelation.stages.7.label>
   <BloodPactRelation.stages.7.description>If I die, they die. Might be worth it.</BloodPactRelation.stages.7.description>
-
   <BloodPactDanger.stages.0.label>long distance blood pact</BloodPactDanger.stages.0.label>
   <BloodPactDanger.stages.0.description>I can't help feeling upset. What if something happens ?</BloodPactDanger.stages.0.description>
   <BloodPactDanger.stages.1.label>blood pact kidnaped</BloodPactDanger.stages.1.label>
   <BloodPactDanger.stages.1.description>We need to do something about this ! Now !</BloodPactDanger.stages.1.description>
-
-
 </LanguageData>

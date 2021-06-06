@@ -1,21 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- shared damages -->
-
   <RitualBloodPactSharedTendable.label>blood pact</RitualBloodPactSharedTendable.label>
   <RitualBloodPactSharedTendable.description>blood pact</RitualBloodPactSharedTendable.description>
   <RitualBloodPactSharedTendable.comps.0.labelTendedWell>healed</RitualBloodPactSharedTendable.comps.0.labelTendedWell>
   <RitualBloodPactSharedTendable.comps.0.labelTendedWellInner>healed</RitualBloodPactSharedTendable.comps.0.labelTendedWellInner>
   <RitualBloodPactSharedTendable.comps.0.labelSolidTendedWell>set</RitualBloodPactSharedTendable.comps.0.labelSolidTendedWell>
   <RitualBloodPactSharedTendable.injuryProps.destroyedLabel>Roten</RitualBloodPactSharedTendable.injuryProps.destroyedLabel>
-
   <RitualBloodPactShared.label>blood pact</RitualBloodPactShared.label>
   <RitualBloodPactShared.description>blood pact</RitualBloodPactShared.description>
   <RitualBloodPactShared.comps.0.labelTendedWell>healed</RitualBloodPactShared.comps.0.labelTendedWell>
   <RitualBloodPactShared.comps.0.labelTendedWellInner>healed</RitualBloodPactShared.comps.0.labelTendedWellInner>
   <RitualBloodPactShared.comps.0.labelSolidTendedWell>set</RitualBloodPactShared.comps.0.labelSolidTendedWell>
   <RitualBloodPactShared.injuryProps.destroyedLabel>Roten</RitualBloodPactShared.injuryProps.destroyedLabel>
-
-
 </LanguageData>

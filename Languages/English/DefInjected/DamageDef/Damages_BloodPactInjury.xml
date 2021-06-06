@@ -1,25 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Ritual creation proc -->
-
   <RitualBloodPactInjury.label>cut</RitualBloodPactInjury.label>
   <RitualBloodPactInjury.deathMessage>{0} has been cut to death.</RitualBloodPactInjury.deathMessage>
-
-
   <!-- Ritual creation symbolic damage -->
-
   <RitualBloodPactSymbolicInjury.label>blood pact cut</RitualBloodPactSymbolicInjury.label>
   <RitualBloodPactSymbolicInjury.deathMessage>{0} has died during a blood pact ritual.</RitualBloodPactSymbolicInjury.deathMessage>
-
-
   <!-- Shared damage type -->
-
   <RitualBloodPactInjuryShared.label>blood pact</RitualBloodPactInjuryShared.label>
   <RitualBloodPactInjuryShared.deathMessage>{0} took one too many shared damage.</RitualBloodPactInjuryShared.deathMessage>
-
   <RitualBloodPactInjurySharedTendable.label>blood pact</RitualBloodPactInjurySharedTendable.label>
   <RitualBloodPactInjurySharedTendable.deathMessage>{0} took one too many shared damage.</RitualBloodPactInjurySharedTendable.deathMessage>
-
-
 </LanguageData>
