@@ -106,7 +106,7 @@ namespace Blood_Pact_Ritual.BloodPactRitual
             }
 
             return Mathf.Clamp(factor * initiator.GetStatValue(StatDefOf.NegotiationAbility)
-                                      * (1f - recipient.RecruitDifficulty(initiator.Faction)), 0f, 1f);
+                                      * (1f - recipient.guest.resistance), 0f, 1f);
         }
 
         private static float GetBaseAcceptChance(Pawn accepting, Pawn otherPawn, bool isInitiator)
@@ -194,7 +194,7 @@ namespace Blood_Pact_Ritual.BloodPactRitual
         private static void Recruit(Pawn recipient, Pawn initiator)
         {
             // we will use a custom message for recruit chance-> we give a dummy value, and dont send message
-            InteractionWorker_RecruitAttempt.DoRecruit(initiator, recipient, 1, false);
+            InteractionWorker_RecruitAttempt.DoRecruit(initiator, recipient, false);
             Find.PlayLog.Add(new PlayLogEntry_Interaction(InteractionDefOf.RecruitAttempt, initiator, recipient,
                 new List<RulePackDef>
                 {
