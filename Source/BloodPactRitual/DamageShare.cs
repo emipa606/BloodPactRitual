@@ -1,8 +1,10 @@
 using System.Reflection;
 using Blood_Pact_Ritual.BloodPactRitual.DefOf;
 using HarmonyLib;
+using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.AI.Group;
 
 namespace Blood_Pact_Ritual.BloodPactRitual
 {
@@ -48,6 +50,12 @@ namespace Blood_Pact_Ritual.BloodPactRitual
             if (dinfo.Def == BloodPactDamageDefOf.RitualBloodPactSymbolicInjury ||
                 dinfo.Def == BloodPactDamageDefOf.RitualBloodPactInjuryShared
                 || dinfo.Def == BloodPactDamageDefOf.RitualBloodPactInjurySharedTendable)
+            {
+                return;
+            }
+
+            // if its a mutilation ritual we do not want to share the damage (as it will kill both pawns if we do)
+            if (pawn.GetLord()?.LordJob is LordJob_Ritual_Mutilation)
             {
                 return;
             }

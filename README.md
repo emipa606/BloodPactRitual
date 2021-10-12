@@ -1,23 +1,14 @@
 # BloodPactRitual
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Oopahs mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=939055832
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/BloodPactRitual]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 Adds the ability to make blood pacts, a powerfull double-edged bond for your colonists. This aims to create new possibilites in combat... and some drama as well !
@@ -30,7 +21,7 @@ Adds the ability to make blood pacts, a powerfull double-edged bond for your col
 - using the ritual dagger (craftable for a small jade and wood cost at a crafting spot, no ressearch needed)
 - one colonist must attack the other, which consumes the ritual dagger and creates the blood pact between your two colonists.
 - at most one blood pact per colonist
-- permanent. **Once done, it can&apos;t be undone**.
+- permanent. **Once done, it can't be undone**.
 
 
 
@@ -52,7 +43,7 @@ Adds the ability to make blood pacts, a powerfull double-edged bond for your col
    - *if they love each other, the blood pact will be more effective, and they will be happy*
 
 
-- also they generaly won&apos;t like being really far apart from each other.
+- also they generaly won't like being really far apart from each other.
 
 
 
@@ -63,7 +54,7 @@ Theses can be enabled or disabled at will.
 
 - **Allow blood pacts with animals** (enabled by default): Your colonists can make blood pacts with tamed animals. The pact power will be based on the presence (or absence) of a Bond between the two, but will be on the low side. As some animals are fairly strong (Thrumbo), this might create some unbalance.
 - **Recruit prisoners with blood pact** (enabled by default): Prisoners may be forced into your colony by creating a blood pact between them and one of your colonist. They might be quite unhappy about it though.
-- **Allow pawn revolt** (enabled by default): Involved pawns may botch a blood pact ritual by going berserk if they strongly oppose to it. If they&apos;re not able to revolt (option is disabled, or downed pawns) they will get a strong mood debuff instead.
+- **Allow pawn revolt** (enabled by default): Involved pawns may botch a blood pact ritual by going berserk if they strongly oppose to it. If they're not able to revolt (option is disabled, or downed pawns) they will get a strong mood debuff instead.
 
 
   - *colonists: based on mood, and opinion of the other pawn*
@@ -90,7 +81,7 @@ Q) What happen if I still make my colonists attack raiders with the ritual dagge
 A) The same thing as if you made them attack with a (crappy) shiv.
 
 Q) What if one of my colonist attack another by accident with a ritual dagger ?
-A) No blood pact will happen : both parties must be able and willing to perform a ritual. The only exception concerns downed pawned : they have no choice but to accept the ritual (they won&apos;t be happy though).
+A) No blood pact will happen : both parties must be able and willing to perform a ritual. The only exception concerns downed pawned : they have no choice but to accept the ritual (they won't be happy though).
 
 Q) How strong a blood pact can be ? I want numbers !
 A) The strength of a blood pact depends on the mutual opinions of 2 pawns. The more they like each-other, the more damage they share, and the more resilient they become. It ranges from :
@@ -101,18 +92,18 @@ A) The strength of a blood pact depends on the mutual opinions of 2 pawns. The m
 
 
 
-Q) That&apos;s overpowered !
-A) That&apos;s not a question, and yes, it&apos;s strong. But every time you expose theses really tanky pawns to danger, you take the risk of having double casualties. Also, the pact is permanent. Even if your pawns decide they suddenly hate each other, it&apos;ll persist. You better take extra care of them ^_^ 
+Q) That's overpowered !
+A) That's not a question, and yes, it's strong. But every time you expose theses really tanky pawns to danger, you take the risk of having double casualties. Also, the pact is permanent. Even if your pawns decide they suddenly hate each other, it'll persist. You better take extra care of them ^_^ 
 
  # COMPATIBILITY
 
  This mod should be compatible with any other mod.
- It is also compatible with EdB Prepare Carefully, which you can use to add blood pacts to your starting colonists (via the &quot;Relations&quot; tab).
+ It is also compatible with EdB Prepare Carefully, which you can use to add blood pacts to your starting colonists (via the "Relations" tab).
 
  -- Have fun ^_^
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -122,7 +113,6 @@ A) That&apos;s not a question, and yes, it&apos;s strong. But every time you exp
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
-
 
 
 
