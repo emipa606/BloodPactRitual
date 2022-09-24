@@ -1,10 +1,9 @@
 using RimWorld;
 
-namespace Blood_Pact_Ritual.BloodPactRitual.DefOf
+namespace Blood_Pact_Ritual.BloodPactRitual.DefOf;
+
+[RimWorld.DefOf]
+public class BloodPactPawnRelationDefOf
 {
-    [RimWorld.DefOf]
-    public class BloodPactPawnRelationDefOf
-    {
-        public static PawnRelationDef PawnRelationBloodPact;
-    }
+    public static PawnRelationDef PawnRelationBloodPact;
 }
