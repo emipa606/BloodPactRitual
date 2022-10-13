@@ -126,7 +126,7 @@ internal class DirectPawnRelationPact : DirectPawnRelation
         Log.Message("Invalid bond removed (" + pawn + ")");
         pawn.relations.RemoveDirectRelation(relation);
 
-        if (pawn.Faction != null && pawn.Faction.IsPlayer)
+        if (pawn.Faction is { IsPlayer: true })
         {
             Find.LetterStack.ReceiveLetter(
                 "BloodPact_Obsolete_Title".Translate(),

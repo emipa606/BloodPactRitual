@@ -26,12 +26,7 @@ public class ThoughtWorkerPactDanger : ThoughtWorker
         }
 
         // if the other is faraway
-        if (IsFaraway(p, bonded))
-        {
-            return ThoughtState.ActiveAtStage((int)DangerStages.Faraway);
-        }
-
-        return ThoughtState.Inactive;
+        return IsFaraway(p, bonded) ? ThoughtState.ActiveAtStage((int)DangerStages.Faraway) : ThoughtState.Inactive;
     }
 
     private static bool IsFaraway(Pawn p, Pawn bonded)

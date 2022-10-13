@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <!-- Messages -->
+  <BloodPact_Setting_CurrentModVersion_Label>Installed mod-version: {0}</BloodPact_Setting_CurrentModVersion_Label>
   <BloodPact_NewPactWithChance_Title>New blood pact</BloodPact_NewPactWithChance_Title>
   <BloodPact_NewPactWithChance_Content>{0} and {1} successfuly made an everlasting blood pact ({2} chance)!
 

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Mlie;
+using UnityEngine;
 using Verse;
 
 namespace BloodPactRitual;
@@ -10,6 +11,8 @@ internal class BloodPactRitualMod : Mod
     ///     The instance of the settings to be read by the mod
     /// </summary>
     public static BloodPactRitualMod instance;
+
+    private static string currentVersion;
 
     /// <summary>
     ///     The private settings
@@ -23,6 +26,8 @@ internal class BloodPactRitualMod : Mod
     public BloodPactRitualMod(ModContentPack content) : base(content)
     {
         instance = this;
+        currentVersion =
+            VersionFromManifest.GetVersionFromModMetaData(ModLister.GetActiveModWithIdentifier("Mlie.BloodPactRitual"));
     }
 
     /// <summary>
@@ -69,6 +74,14 @@ internal class BloodPactRitualMod : Mod
             "BloodPact_Setting_Prisoner_Desc".Translate());
         listing_Standard.CheckboxLabeled("BloodPact_Setting_Tendable_Title".Translate(),
             ref Settings.SharedDamageNeedsTending, "BloodPact_Setting_Tendable_Desc".Translate());
+        if (currentVersion != null)
+        {
+            listing_Standard.Gap();
+            GUI.contentColor = Color.gray;
+            listing_Standard.Label("BloodPact_Setting_CurrentModVersion_Label".Translate(currentVersion));
+            GUI.contentColor = Color.white;
+        }
+
         listing_Standard.End();
         Settings.Write();
     }

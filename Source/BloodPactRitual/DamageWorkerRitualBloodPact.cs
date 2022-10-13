@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Blood_Pact_Ritual.BloodPactRitual.DefOf;
+﻿using Blood_Pact_Ritual.BloodPactRitual.DefOf;
 using RimWorld;
 using Verse;
 
@@ -55,7 +54,7 @@ public class DamageWorkerRitualBloodPact : DamageWorker
         // if we don't find one, we'll let the engine hit what it wants
         foreach (var record in partRecords.InRandomOrder())
         {
-            if (pawn.health.hediffSet.GetHediffs<Hediff_MissingPart>().Any(x => x.Part == record))
+            if (pawn.health.hediffSet.hediffs.Any(x => x is Hediff_MissingPart && x.Part == record))
             {
                 continue;
             }

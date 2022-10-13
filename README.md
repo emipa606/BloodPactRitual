@@ -5,6 +5,8 @@
 Update of Oopahs mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=939055832
 
+- Removed dependency to HugsLib
+
 ![Image](https://i.imgur.com/pufA0kM.png)
 
 	

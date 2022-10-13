@@ -389,7 +389,7 @@ public class BloodPactRitual
     private static bool IsValidForKeepingBloodPact(Pawn pawn)
     {
         // only from player faction
-        return pawn?.relations != null && pawn.Faction != null && pawn.Faction.IsPlayer;
+        return pawn is { relations: { }, Faction.IsPlayer: true };
     }
 
     /// <returns>true if pawn can be the initiator in a blood pact creation.</returns>
@@ -401,7 +401,7 @@ public class BloodPactRitual
     private static bool IsRecruitablePrisoner(Pawn prisoner)
     {
         return prisoner.RaceProps.Humanlike && prisoner.relations != null && prisoner.IsPrisonerOfColony
-               && prisoner.Faction != null && !prisoner.Faction.IsPlayer;
+               && prisoner.Faction is { IsPlayer: false };
     }
 
     /// <returns>true if pawn can be on the receiving part of a blood pact creation</returns>
