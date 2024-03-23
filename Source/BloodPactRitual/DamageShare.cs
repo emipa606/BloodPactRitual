@@ -40,7 +40,7 @@ internal class DamageShare
             return;
         }
 
-        // some kind of injuries we don't wanna handle
+        // some kind of injuries we don't want to handle
         // also if damage is too low, we can't share it
         if (dinfo.InstantPermanentInjury || !dinfo.Def.harmsHealth || injury.Severity <= MinDamage)
         {
@@ -55,7 +55,7 @@ internal class DamageShare
             return;
         }
 
-        // if its a mutilation ritual we do not want to share the damage (as it will kill both pawns if we do)
+        // if it's a mutilation ritual we do not want to share the damage (as it will kill both pawns if we do)
         if (pawn.GetLord()?.LordJob is LordJob_Ritual_Mutilation)
         {
             return;
@@ -85,7 +85,7 @@ internal class DamageShare
         // => we use direct access
         Severity.SetValue(injury, remainingDamage);
 
-        // Here we're gonna inflict the shared damages to the other pawn (if there's any)
+        // Here we're going to inflict the shared damages to the other pawn (if there's any)
         if (takenDamage <= 0)
         {
             return;
@@ -134,7 +134,7 @@ internal class DamageShare
 
         // trying to find the same body part
         // doing string equality, because both pawns might not be of the same race
-        // so they might not have the same body parts, even though they're the same kind of part 
+        // , so they might not have the same body parts, even though they're the same kind of part 
         // (thus having the same name)
         var samePart = bodyParts.Find(x => x.def.defName.Equals(initial.def.defName));
         return samePart ?? bodyParts.RandomElement();

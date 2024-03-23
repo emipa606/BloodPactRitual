@@ -52,8 +52,8 @@ public class ThoughtWorkerPactDanger : ThoughtWorker
 
     private static bool IsPrisonerOfEnemyFaction(Pawn pawn, Pawn bonded)
     {
-        // We gotta check if he's prisoner of any faction
-        // but we check first that he's not spawned or caravan member, to avoid checking all factions for no reason
+        // We have to check if he's prisoner of any faction
+        // , but we check first that he's not spawned or caravan member, to avoid checking all factions for no reason
         if (bonded.Spawned || bonded.IsCaravanMember())
         {
             return false;

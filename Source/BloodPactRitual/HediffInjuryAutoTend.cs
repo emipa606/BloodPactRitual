@@ -19,7 +19,7 @@ public class HediffInjuryAutoTend : Hediff_Injury
             var stringBuilder = new StringBuilder();
             foreach (var specialDisplayStat in HediffStatsUtility.SpecialDisplayStats(CurStage, this))
             {
-                if (specialDisplayStat.ShouldDisplay)
+                if (specialDisplayStat.ShouldDisplay())
                 {
                     stringBuilder.AppendLine(specialDisplayStat.LabelCap + ": " + specialDisplayStat.ValueString);
                 }
@@ -31,7 +31,7 @@ public class HediffInjuryAutoTend : Hediff_Injury
                 return stringBuilder.ToString();
             }
 
-            foreach (var comp in comps.Where(comp => !(comp is HediffComp_TendDuration)))
+            foreach (var comp in comps.Where(comp => comp is not HediffComp_TendDuration))
             {
                 var compTipStringExtra = comp.CompTipStringExtra;
                 if (!compTipStringExtra.NullOrEmpty())

@@ -18,14 +18,13 @@ class Main
         var harmony = new Harmony("stoh.rimworld.bloodPactRitual");
         //Log.Message("BloodPactRitual: patching FinalizeAndAddInjury");
         harmony.Patch(
-            AccessTools.Method(typeof(DamageWorker_AddInjury), "FinalizeAndAddInjury", new[]
-            {
+            AccessTools.Method(typeof(DamageWorker_AddInjury), "FinalizeAndAddInjury", [
                 typeof(Pawn), typeof(Hediff_Injury), typeof(DamageInfo), typeof(DamageWorker.DamageResult)
-            }),
+            ]),
             new HarmonyMethod(typeof(DamageWorker_AddInjury_Patch).GetMethod("FinalizeAndAddInjury_Prefix")));
         //Log.Message("BloodPactRitual: patching DrawEquipment");
         harmony.Patch(
-            AccessTools.Method(typeof(PawnRenderer), "DrawEquipment"),
+            AccessTools.Method(typeof(PawnRenderUtility), "DrawEquipmentAndApparelExtras"),
             null,
             new HarmonyMethod(typeof(PawnRenderer_Patch).GetMethod("DrawEquipment_PostFix")));
         //Log.Message("BloodPactRitual: patching RelationsTrackerTick");

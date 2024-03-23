@@ -72,8 +72,8 @@ internal class DirectPawnRelationPact : DirectPawnRelation
     public static bool IsInvalid(Pawn pawn, DirectPawnRelation relation)
     {
         return relation.def == BloodPactPawnRelationDefOf.PawnRelationBloodPact &&
-               (pawn == null || relation.otherPawn == null || pawn.Faction == null || !pawn.Faction.IsPlayer
-                || relation.otherPawn.Faction == null || !relation.otherPawn.Faction.IsPlayer);
+               (pawn == null || relation.otherPawn == null || pawn.Faction is not { IsPlayer: true }
+                || relation.otherPawn.Faction is not { IsPlayer: true });
     }
 
     public static Pawn GetPactPawn(Pawn pawn)
@@ -139,12 +139,12 @@ internal class DirectPawnRelationPact : DirectPawnRelation
     private static bool IsValid(DirectPawnRelation relation, Pawn pawn)
     {
         var otherPawn = relation.otherPawn;
-        if (otherPawn?.Faction == null || !otherPawn.Faction.IsPlayer || otherPawn.relations == null)
+        if (otherPawn?.Faction is not { IsPlayer: true } || otherPawn.relations == null)
         {
             return false;
         }
 
-        // if the other's dead, the pact is valid -> we gonna get killed
+        // if the other's dead, the pact is valid -> we're going to get killed
         if (otherPawn.Dead)
         {
             return true;
@@ -171,7 +171,7 @@ internal class DirectPawnRelationPact : DirectPawnRelation
         // no loop plz
         pactRelation._notifiedDeath = true;
 
-        // we gotta kill 
+        // we have to kill 
         if (IsValid(pactRelation, killed) && !pactRelation.otherPawn.Dead)
         {
             PactDeath(pactRelation.otherPawn, killed, dinfo);

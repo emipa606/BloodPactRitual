@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Blood_Pact_Ritual.BloodPactRitual.DefOf;
 using BloodPactRitual;
 using RimWorld;
@@ -20,25 +19,25 @@ public class BloodPactRitual
     private const float BaseColonistRecipientAcceptChance = 1f;
 
     private const float
-        PrisonerRecruitChanceFactor = 10f; // much more efficient than normal recruit ways.. but more risky too
+        PrisonerRecruitChanceFactor = 10f; // much more efficient than normal recruit ways. but more risky too
 
 
     // ======== from InteractionWorker_RecruitAttempt
-    private static readonly SimpleCurve AcceptChanceFactorCurveOpinion = new SimpleCurve
-    {
+    private static readonly SimpleCurve AcceptChanceFactorCurveOpinion =
+    [
         new CurvePoint(-50f, 0.0f),
         new CurvePoint(50f, 1f),
         new CurvePoint(100f, 2f)
-    };
+    ];
 
-    private static readonly SimpleCurve AcceptChanceFactorCurveMood = new SimpleCurve
-    {
+    private static readonly SimpleCurve AcceptChanceFactorCurveMood =
+    [
         new CurvePoint(0.0f, 0.25f),
         new CurvePoint(0.1f, 0.25f),
         new CurvePoint(0.25f, 1f),
         new CurvePoint(0.5f, 1f),
         new CurvePoint(1f, 1.5f)
-    };
+    ];
 
     /// <summary>
     ///     Try to create a blood pact between recipient and initiator
@@ -54,7 +53,7 @@ public class BloodPactRitual
             return false;
         }
 
-        // we check they dont have any existing bond already
+        // we check they don't have any existing bond already
         if (DirectPawnRelationPact.GetPactRelation(recipient) != null ||
             DirectPawnRelationPact.GetPactRelation(initiator) != null)
         {
@@ -194,13 +193,10 @@ public class BloodPactRitual
     /// <param name="initiator"></param>
     private static void Recruit(Pawn recipient, Pawn initiator)
     {
-        // we will use a custom message for recruit chance-> we give a dummy value, and dont send message
+        // we will use a custom message for recruit chance-> we give a dummy value, and don't send message
         InteractionWorker_RecruitAttempt.DoRecruit(initiator, recipient, false);
         Find.PlayLog.Add(new PlayLogEntry_Interaction(InteractionDefOf.RecruitAttempt, initiator, recipient,
-            new List<RulePackDef>
-            {
-                RulePackDefOf.Sentence_RecruitAttemptAccepted
-            }));
+            [RulePackDefOf.Sentence_RecruitAttemptAccepted]));
     }
 
     private static bool TryMentalBreak(Pawn pawn, PawnReaction reaction)
@@ -267,8 +263,8 @@ public class BloodPactRitual
             return;
         }
 
-        // They get pretty sad about this
-        // this overrides any existing "went berserk" bad though
+        // They get pretty sad about these
+        // overrides any existing "went berserk" bad though
         pawn.needs.mood.thoughts.memories.RemoveMemoriesOfDef(BloodPactThoughtDefOf.BloodPactWentBerserk);
         pawn.needs.mood.thoughts.memories.TryGainMemory(BloodPactThoughtDefOf.BloodPactForcedPact, otherPawn);
     }
@@ -389,7 +385,7 @@ public class BloodPactRitual
     private static bool IsValidForKeepingBloodPact(Pawn pawn)
     {
         // only from player faction
-        return pawn is { relations: { }, Faction.IsPlayer: true };
+        return pawn is { relations: not null, Faction.IsPlayer: true };
     }
 
     /// <returns>true if pawn can be the initiator in a blood pact creation.</returns>
@@ -426,17 +422,10 @@ public class BloodPactRitual
         MentalBreak
     }
 
-    private struct PawnReaction
+    private struct PawnReaction(PawnReactionMood mood, float acceptChance, bool prisoner)
     {
-        internal PawnReactionMood Mood;
-        internal readonly float AcceptChance;
-        internal readonly bool Prisoner;
-
-        public PawnReaction(PawnReactionMood mood, float acceptChance, bool prisoner)
-        {
-            Mood = mood;
-            AcceptChance = acceptChance;
-            Prisoner = prisoner;
-        }
+        internal PawnReactionMood Mood = mood;
+        internal readonly float AcceptChance = acceptChance;
+        internal readonly bool Prisoner = prisoner;
     }
 }

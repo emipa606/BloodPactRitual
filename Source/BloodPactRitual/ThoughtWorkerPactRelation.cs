@@ -11,11 +11,11 @@ public class ThoughtWorkerPactRelation : ThoughtWorker
 
     // dislike, neutral, like
     private static readonly RelationStages[][] Stages =
-    {
-        new[] { RelationStages.MutualHate, RelationStages.Dislike, RelationStages.DislikeVsLike },
-        new[] { RelationStages.Unsafe, RelationStages.Neutral, RelationStages.Neutral },
-        new[] { RelationStages.LikeVsDislike, RelationStages.Like, RelationStages.MutualTrust }
-    };
+    [
+        [RelationStages.MutualHate, RelationStages.Dislike, RelationStages.DislikeVsLike],
+        [RelationStages.Unsafe, RelationStages.Neutral, RelationStages.Neutral],
+        [RelationStages.LikeVsDislike, RelationStages.Like, RelationStages.MutualTrust]
+    ];
 
     private static int GetOpinionIndex(int opinion)
     {

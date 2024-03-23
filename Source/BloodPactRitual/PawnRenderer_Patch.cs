@@ -1,17 +1,11 @@
-﻿using System.Reflection;
-using HarmonyLib;
-using Verse;
+﻿using Verse;
 
 namespace Blood_Pact_Ritual.BloodPactRitual;
 
 internal static class PawnRenderer_Patch
 {
-    private static readonly FieldInfo _getPawn = AccessTools.Field(typeof(PawnRenderer), "pawn");
-
-
-    public static void DrawEquipment_PostFix(PawnRenderer __instance)
+    public static void DrawEquipment_PostFix(Pawn pawn)
     {
-        var pawn = (Pawn)_getPawn.GetValue(__instance);
         var pactRelation = DirectPawnRelationPact.GetPactRelation(pawn);
         if (pactRelation == null)
         {
