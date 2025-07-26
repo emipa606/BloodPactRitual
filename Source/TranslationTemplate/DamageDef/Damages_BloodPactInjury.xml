@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: cut -->
+  <RitualBloodPactInjury.label>cut</RitualBloodPactInjury.label>
+  <!-- EN: {0} has been cut to death. -->
+  <RitualBloodPactInjury.deathMessage>{0} has been cut to death.</RitualBloodPactInjury.deathMessage>
+  <!-- EN: blood pact -->
+  <RitualBloodPactInjuryShared.label>blood pact</RitualBloodPactInjuryShared.label>
+  <!-- EN: {0} took one too many shared damage. -->
+  <RitualBloodPactInjuryShared.deathMessage>{0} took one too many shared damage.</RitualBloodPactInjuryShared.deathMessage>
+  <!-- EN: blood pact -->
+  <RitualBloodPactInjurySharedTendable.label>blood pact</RitualBloodPactInjurySharedTendable.label>
+  <!-- EN: {0} took one too many shared damage. -->
+  <RitualBloodPactInjurySharedTendable.deathMessage>{0} took one too many shared damage.</RitualBloodPactInjurySharedTendable.deathMessage>
+  <!-- EN: blood pact cut -->
+  <RitualBloodPactSymbolicInjury.label>blood pact cut</RitualBloodPactSymbolicInjury.label>
+  <!-- EN: {0} has died during a blood pact ritual. -->
+  <RitualBloodPactSymbolicInjury.deathMessage>{0} has died during a blood pact ritual.</RitualBloodPactSymbolicInjury.deathMessage>
+</LanguageData>

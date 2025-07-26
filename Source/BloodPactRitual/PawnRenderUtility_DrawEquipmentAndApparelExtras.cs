@@ -1,10 +1,12 @@
-﻿using Verse;
+﻿using HarmonyLib;
+using Verse;
 
 namespace Blood_Pact_Ritual.BloodPactRitual;
 
-internal static class PawnRenderer_Patch
+[HarmonyPatch(typeof(PawnRenderUtility), nameof(PawnRenderUtility.DrawEquipmentAndApparelExtras))]
+internal static class PawnRenderUtility_DrawEquipmentAndApparelExtras
 {
-    public static void DrawEquipment_PostFix(Pawn pawn)
+    public static void Postfix(Pawn pawn)
     {
         var pactRelation = DirectPawnRelationPact.GetPactRelation(pawn);
         if (pactRelation == null)

@@ -37,10 +37,7 @@ internal class BloodPactRitualMod : Mod
     {
         get
         {
-            if (settings == null)
-            {
-                settings = GetSettings<BloodPactRitualSettings>();
-            }
+            settings ??= GetSettings<BloodPactRitualSettings>();
 
             return settings;
         }

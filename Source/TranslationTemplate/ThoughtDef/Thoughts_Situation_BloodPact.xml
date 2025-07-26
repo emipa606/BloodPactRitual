@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: long distance blood pact -->
+  <BloodPactDanger.stages.long_distance_blood_pact.label>long distance blood pact</BloodPactDanger.stages.long_distance_blood_pact.label>
+  <!-- EN: I can't help feeling upset. What if something happens ? -->
+  <BloodPactDanger.stages.long_distance_blood_pact.description>I can't help feeling upset. What if something happens ?</BloodPactDanger.stages.long_distance_blood_pact.description>
+  <!-- EN: blood pact kidnaped -->
+  <BloodPactDanger.stages.blood_pact_kidnaped.label>blood pact kidnaped</BloodPactDanger.stages.blood_pact_kidnaped.label>
+  <!-- EN: We need to do something about this ! Now ! -->
+  <BloodPactDanger.stages.blood_pact_kidnaped.description>We need to do something about this ! Now !</BloodPactDanger.stages.blood_pact_kidnaped.description>
+  <!-- EN: trust in blood pact -->
+  <BloodPactRelation.stages.trust_in_blood_pact.label>trust in blood pact</BloodPactRelation.stages.trust_in_blood_pact.label>
+  <!-- EN: I trust them, and they trust me. Together we are invincibles. -->
+  <BloodPactRelation.stages.trust_in_blood_pact.description>I trust them, and they trust me. Together we are invincibles.</BloodPactRelation.stages.trust_in_blood_pact.description>
+  <!-- EN: liking blood pact -->
+  <BloodPactRelation.stages.liking_blood_pact.label>liking blood pact</BloodPactRelation.stages.liking_blood_pact.label>
+  <!-- EN: I'm glad to have a bond with such a nice person. -->
+  <BloodPactRelation.stages.liking_blood_pact.description>I'm glad to have a bond with such a nice person.</BloodPactRelation.stages.liking_blood_pact.description>
+  <!-- EN: approving blood pact -->
+  <BloodPactRelation.stages.approving_blood_pact.label>approving blood pact</BloodPactRelation.stages.approving_blood_pact.label>
+  <!-- EN: I feel... stronger. -->
+  <BloodPactRelation.stages.approving_blood_pact.description>I feel... stronger.</BloodPactRelation.stages.approving_blood_pact.description>
+  <!-- EN: worried about blood pact -->
+  <BloodPactRelation.stages.worried_about_blood_pact.label>worried about blood pact</BloodPactRelation.stages.worried_about_blood_pact.label>
+  <!-- EN: I made a blood pact with someone I really like... but it's not mutual. -->
+  <BloodPactRelation.stages.worried_about_blood_pact.description>I made a blood pact with someone I really like... but it's not mutual.</BloodPactRelation.stages.worried_about_blood_pact.description>
+  <!-- EN: disaproving blood pact -->
+  <BloodPactRelation.stages.disaproving_blood_pact.label>disaproving blood pact</BloodPactRelation.stages.disaproving_blood_pact.label>
+  <!-- EN: They like me... I don't. At least they won't try to hurt me. -->
+  <BloodPactRelation.stages.disaproving_blood_pact.description>They like me... I don't. At least they won't try to hurt me.</BloodPactRelation.stages.disaproving_blood_pact.description>
+  <!-- EN: anxious about blood pact -->
+  <BloodPactRelation.stages.anxious_about_blood_pact.label>anxious about blood pact</BloodPactRelation.stages.anxious_about_blood_pact.label>
+  <!-- EN: I know they hate me... that can't be good. -->
+  <BloodPactRelation.stages.anxious_about_blood_pact.description>I know they hate me... that can't be good.</BloodPactRelation.stages.anxious_about_blood_pact.description>
+  <!-- EN: hating blood pact -->
+  <BloodPactRelation.stages.hating_blood_pact.label>hating blood pact</BloodPactRelation.stages.hating_blood_pact.label>
+  <!-- EN: I hate this jerk ! Why do I have to put up with this ? -->
+  <BloodPactRelation.stages.hating_blood_pact.description>I hate this jerk ! Why do I have to put up with this ?</BloodPactRelation.stages.hating_blood_pact.description>
+  <!-- EN: loathing blood pact -->
+  <BloodPactRelation.stages.loathing_blood_pact.label>loathing blood pact</BloodPactRelation.stages.loathing_blood_pact.label>
+  <!-- EN: If I die, they die. Might be worth it. -->
+  <BloodPactRelation.stages.loathing_blood_pact.description>If I die, they die. Might be worth it.</BloodPactRelation.stages.loathing_blood_pact.description>
+</LanguageData>

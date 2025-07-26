@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: blood pact -->
+  <RitualBloodPactShared.label>blood pact</RitualBloodPactShared.label>
+  <!-- EN: blood pact -->
+  <RitualBloodPactShared.description>blood pact</RitualBloodPactShared.description>
+  <!-- EN: {0} in the {1} -->
+  <RitualBloodPactShared.labelNounPretty>{0} in the {1}</RitualBloodPactShared.labelNounPretty>
+  <!-- EN: blood pact -->
+  <RitualBloodPactSharedTendable.label>blood pact</RitualBloodPactSharedTendable.label>
+  <!-- EN: blood pact -->
+  <RitualBloodPactSharedTendable.description>blood pact</RitualBloodPactSharedTendable.description>
+  <!-- EN: {0} in the {1} -->
+  <RitualBloodPactSharedTendable.labelNounPretty>{0} in the {1}</RitualBloodPactSharedTendable.labelNounPretty>
+</LanguageData>

@@ -1,4 +1,4 @@
-# BloodPactRitual
+# [Blood Pact Ritual (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2194097170)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
@@ -8,10 +8,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=939055832
 - Removed dependency to HugsLib
 
 ![Image](https://i.imgur.com/pufA0kM.png)
-
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
-
 
 Adds the ability to make blood pacts, a powerfull double-edged bond for your colonists. This aims to create new possibilites in combat... and some drama as well !
 
@@ -37,7 +35,7 @@ Adds the ability to make blood pacts, a powerfull double-edged bond for your col
 - *This makes them much more resilient in fight, especially if only one of the two is exposed to damage.*
 
 
-- **[u]both colonists share death. If one die, the other die[/u]**.
+- **<ins>both colonists share death. If one die, the other die</ins>**.
 - the relation between the two colonists will impact their mood, and the pact power :
 
 
@@ -90,7 +88,7 @@ A) The strength of a blood pact depends on the mutual opinions of 2 pawns. The m
 
 
 -  Worst case, they hate each other: 90% of damage to the original target, 10% shared.
--  Best case, they love each other: 30% of damage to the original target, 30% shared. Yup, that means [strike]60%[/strike] 40% of every attack is ignored.
+-  Best case, they love each other: 30% of damage to the original target, 30% shared. Yup, that means ~~60%~~ 40% of every attack is ignored.
 
 
 
@@ -111,13 +109,12 @@ A) That's not a question, and yes, it's strong. But every time you expose theses
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
+-  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
+-  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
-
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2194097170]![Image](https://img.shields.io/github/v/release/emipa606/BloodPactRitual?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
-
+[![Image](https://img.shields.io/github/v/release/emipa606/BloodPactRitual?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2194097170) | tags:  ritual,  colonists

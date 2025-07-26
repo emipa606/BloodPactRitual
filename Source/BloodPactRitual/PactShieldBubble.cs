@@ -7,7 +7,7 @@ namespace Blood_Pact_Ritual.BloodPactRitual;
 public class PactShieldBubble
 {
     private const int NumTick = 100;
-    private static readonly Color FullColor = new Color(150, 0, 0);
+    private static readonly Color FullColor = new(150, 0, 0);
 
     private static readonly Material BubbleMat =
         MaterialPool.MatFrom("Other/BloodPactShield", ShaderDatabase.Transparent, FullColor);
