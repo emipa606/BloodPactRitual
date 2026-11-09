@@ -19,7 +19,12 @@ public class ThoughtWorkerPactRelation : ThoughtWorker
 
     private static int GetOpinionIndex(int opinion)
     {
-        return opinion >= Like ? 2 : opinion <= Disike ? 0 : 1;
+        if (opinion >= Like)
+        {
+            return 2;
+        }
+
+        return opinion <= Disike ? 0 : 1;
     }
 
     private static RelationStages GetRelationStage(int myOpinion, int theirOpinion)

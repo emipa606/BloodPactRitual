@@ -6,4 +6,26 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="BloodPactRitual/BloodPactRitual.csproj" />
+  <Folder Name="/XML/Defs/ThingDefs_Misc/">
+    <File Path="../Defs/ThingDefs_Misc/Weapons_BloodPact.xml" />
+  </Folder>
+  <Folder Name="/XML/Defs/ThoughtDefs/">
+    <File Path="../Defs/ThoughtDefs/Thoughts_Memory_Social_BloodPact.xml" />
+    <File Path="../Defs/ThoughtDefs/Thoughts_Situation_BloodPact.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/BloodPact.xml" />
+  </Folder>
+  <Folder Name="/XML/Defs/PawnRelationDefs/">
+    <File Path="../Defs/PawnRelationDefs/PawnRelations_BloodPact.xml" />
+  </Folder>
+  <Folder Name="/XML/Defs/DamageDefs/">
+    <File Path="../Defs/DamageDefs/Damages_BloodPactInjury.xml" />
+  </Folder>
+  <Folder Name="/XML/Defs/HediffDefs/">
+    <File Path="../Defs/HediffDefs/Hediffs_Local_BloodPact.xml" />
+  </Folder>
 </Solution>

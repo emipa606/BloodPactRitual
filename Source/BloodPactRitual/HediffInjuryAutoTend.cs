@@ -17,12 +17,10 @@ public class HediffInjuryAutoTend : Hediff_Injury
             // the goal here is to avoid extra lines from HediffComp_TendDuration
             // From Hediff.TipStringExtra
             var stringBuilder = new StringBuilder();
-            foreach (var specialDisplayStat in HediffStatsUtility.SpecialDisplayStats(CurStage, this))
+            foreach (var specialDisplayStat in HediffStatsUtility.SpecialDisplayStats(CurStage, this)
+                         .Where(s => s.ShouldDisplay()))
             {
-                if (specialDisplayStat.ShouldDisplay())
-                {
-                    stringBuilder.AppendLine(specialDisplayStat.LabelCap + ": " + specialDisplayStat.ValueString);
-                }
+                stringBuilder.AppendLine($"{specialDisplayStat.LabelCap}: {specialDisplayStat.ValueString}");
             }
 
             // From Hediff_Injury.TipStringExtra
@@ -31,13 +29,11 @@ public class HediffInjuryAutoTend : Hediff_Injury
                 return stringBuilder.ToString();
             }
 
-            foreach (var comp in comps.Where(comp => comp is not HediffComp_TendDuration))
+            foreach (var compTipStringExtra in comps.Where(comp =>
+                             comp is not HediffComp_TendDuration && !comp.CompTipStringExtra.NullOrEmpty())
+                         .Select(comp => comp.CompDescriptionExtra))
             {
-                var compTipStringExtra = comp.CompTipStringExtra;
-                if (!compTipStringExtra.NullOrEmpty())
-                {
-                    stringBuilder.AppendLine(compTipStringExtra);
-                }
+                stringBuilder.AppendLine(compTipStringExtra);
             }
 
             return stringBuilder.ToString();

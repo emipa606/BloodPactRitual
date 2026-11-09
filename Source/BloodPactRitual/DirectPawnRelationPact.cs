@@ -12,14 +12,14 @@ internal class DirectPawnRelationPact : DirectPawnRelation
     private const float EfficiencyAnimalWithBond = .3f;
 
     private const int EfficiencyUpdateTick = 60;
-    private float _lastEfficiency;
-    private int _lastTickEfficiencyUpdate = -9999;
-
-    private bool _notifiedDeath;
     public int LastReceivedPactDamage = -9999;
 
     // can't expose anything since we can't modify parent class. Theses are cached values 
     public int LastShieldActive = -9999;
+    private float _lastEfficiency;
+    private int _lastTickEfficiencyUpdate = -9999;
+
+    private bool _notifiedDeath;
 
     public DirectPawnRelationPact()
     {
@@ -99,8 +99,8 @@ internal class DirectPawnRelationPact : DirectPawnRelation
         // we have to create the specialized version
         res = new DirectPawnRelationPact(relation);
 
-        pawn.relations.DirectRelations.Remove(relation);
-        pawn.relations.DirectRelations.Add(res);
+        pawn?.relations?.DirectRelations.Remove(relation);
+        pawn?.relations?.DirectRelations.Add(res);
 
         return res;
     }
@@ -123,7 +123,7 @@ internal class DirectPawnRelationPact : DirectPawnRelation
 
     private static void RemovePact(Pawn pawn, DirectPawnRelation relation)
     {
-        Log.Message("Invalid bond removed (" + pawn + ")");
+        Log.Message($"Invalid bond removed ({pawn})");
         pawn.relations.RemoveDirectRelation(relation);
 
         if (pawn.Faction is { IsPlayer: true })

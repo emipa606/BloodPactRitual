@@ -6,7 +6,7 @@ using Verse;
 
 namespace Blood_Pact_Ritual.BloodPactRitual;
 
-public class BloodPactRitual
+public static class BloodPactRitual
 {
     private const float MinAcceptChance = 0.005f;
     private const float MaxAcceptChance = 1f;
@@ -86,7 +86,7 @@ public class BloodPactRitual
             return !pawn.Downed && !pawn.InMentalState;
         }
 
-        Log.Message("Blood pact tentative involving not spawned pawn (" + pawn + ")");
+        Log.Message($"Blood pact tentative involving not spawned pawn ({pawn})");
         return false;
 
         // if we're down, or crazy, we can't do a ritual
@@ -344,6 +344,7 @@ public class BloodPactRitual
         }
 
         if (curJob.def == JobDefOf.AttackMelee &&
+            attacker.jobs != null &&
             attacker.jobs.IsCurrentJobPlayerInterruptible() &&
             curJob.targetA == target)
         {
@@ -353,28 +354,11 @@ public class BloodPactRitual
 
     private static bool CreatePact(Pawn recipient, Pawn initiator)
     {
-//            var bondedHediff = BloodPactHediffDefOf.RitualBloodPact;
-//            var pawnHediff = HediffMaker.MakeHediff(bondedHediff, recipient) as   HediffRitualBloodPact;
-//            var instigatorHediff = HediffMaker.MakeHediff(bondedHediff, initiator) as HediffRitualBloodPact;
-//
-//            if (pawnHediff == null || instigatorHediff == null)
-//            {
-//                Log.Error("Cant create hediff, blood pact will not be created (" + recipient + "," + initiator + ")");
-//                return false;
-//            }
-
         // if one of them is a prisoner, we need to recruit them now
         if (IsRecruitablePrisoner(recipient))
         {
             Recruit(recipient, initiator);
         }
-
-        //            pawnHediff.Bonded = initiator;
-//            instigatorHediff.Bonded = recipient;
-//
-//            // add hediff
-//            recipient.health.AddHediff(pawnHediff);
-//            initiator.health.AddHediff(instigatorHediff);
 
         // add relation
         recipient.relations.AddDirectRelation(BloodPactPawnRelationDefOf.PawnRelationBloodPact, initiator);

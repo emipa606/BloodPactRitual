@@ -3,7 +3,7 @@
 namespace Blood_Pact_Ritual.BloodPactRitual.DefOf;
 
 [RimWorld.DefOf]
-public class BloodPactThoughtDefOf
+public static class BloodPactThoughtDefOf
 {
     public static ThoughtDef BloodPactRelation;
     public static ThoughtDef BloodPactDanger;

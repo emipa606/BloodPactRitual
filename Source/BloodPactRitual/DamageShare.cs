@@ -9,7 +9,7 @@ using Verse.AI.Group;
 
 namespace Blood_Pact_Ritual.BloodPactRitual;
 
-internal class DamageShare
+internal static class DamageShare
 {
     // efficiency
     private const float MinEfficiencyTakenRatio = .1f;
@@ -72,43 +72,46 @@ internal class DamageShare
         }
 
         var damageAmount = injury.Severity;
-        var efficiency = pactRelation.Efficiency(pawn);
-
-        // We give some feedback for shield effect
-        pactRelation.LastShieldActive = Find.TickManager.TicksGame;
-
-        // so we split damages
-        var remainingDamage = Mathf.Max(MinDamage, Mathf.RoundToInt(GetRemainingRatio(efficiency) * damageAmount));
-        var takenDamage = Mathf.RoundToInt(GetTakenRatio(efficiency) * damageAmount);
-
-        // updating the injurie's damages, w/o firing an update
-        // => we use direct access
-        Severity.SetValue(injury, remainingDamage);
-
-        // Here we're going to inflict the shared damages to the other pawn (if there's any)
-        if (takenDamage <= 0)
+        if (pactRelation != null)
         {
-            return;
-        }
+            var efficiency = pactRelation.Efficiency(pawn);
 
-        var dinfoReflected = new DamageInfo(
-            // using a special damage type to avoid reflecting what's already reflected
-            // + we chose if we want it te be tendable or not
-            BloodPactRitualMod.instance.Settings.SharedDamageNeedsTending
-                ? BloodPactDamageDefOf.RitualBloodPactInjurySharedTendable
-                : BloodPactDamageDefOf.RitualBloodPactInjuryShared,
-            takenDamage,
-            dinfo.Angle,
-            0,
-            dinfo.Instigator,
-            ComputeHitPart(pactPawn, injury.Part), // we try to hit the exact same part
-            dinfo.Weapon,
-            dinfo.Category
-        );
-        // no damage propagation
-        // because the original target will share this with the other
-        dinfoReflected.SetAllowDamagePropagation(false);
-        pactPawn.TakeDamage(dinfoReflected);
+            // We give some feedback for shield effect
+            pactRelation.LastShieldActive = Find.TickManager.TicksGame;
+
+            // so we split damages
+            var remainingDamage = Mathf.Max(MinDamage, Mathf.RoundToInt(GetRemainingRatio(efficiency) * damageAmount));
+            var takenDamage = Mathf.RoundToInt(GetTakenRatio(efficiency) * damageAmount);
+
+            // updating the injurie's damages, w/o firing an update
+            // => we use direct access
+            Severity.SetValue(injury, remainingDamage);
+
+            // Here we're going to inflict the shared damages to the other pawn (if there's any)
+            if (takenDamage <= 0)
+            {
+                return;
+            }
+
+            var dinfoReflected = new DamageInfo(
+                // using a special damage type to avoid reflecting what's already reflected
+                // + we chose if we want it te be tendable or not
+                BloodPactRitualMod.instance.Settings.SharedDamageNeedsTending
+                    ? BloodPactDamageDefOf.RitualBloodPactInjurySharedTendable
+                    : BloodPactDamageDefOf.RitualBloodPactInjuryShared,
+                takenDamage,
+                dinfo.Angle,
+                0,
+                dinfo.Instigator,
+                ComputeHitPart(pactPawn, injury.Part), // we try to hit the exact same part
+                dinfo.Weapon,
+                dinfo.Category
+            );
+            // no damage propagation
+            // because the original target will share this with the other
+            dinfoReflected.SetAllowDamagePropagation(false);
+            pactPawn.TakeDamage(dinfoReflected);
+        }
 
         // Notifying the other pawn
         var otherPactRelation = DirectPawnRelationPact.GetPactRelation(pactPawn);

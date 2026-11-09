@@ -1,15 +1,15 @@
 # [Blood Pact Ritual (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2194097170)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of Oopahs mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=939055832
 
 - Removed dependency to HugsLib
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 Adds the ability to make blood pacts, a powerfull double-edged bond for your colonists. This aims to create new possibilites in combat... and some drama as well !
 
@@ -103,13 +103,13 @@ A) That's not a question, and yes, it's strong. But every time you expose theses
  -- Have fun ^_^
 
 
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
@@ -117,4 +117,4 @@ A) That's not a question, and yes, it's strong. But every time you expose theses
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/BloodPactRitual?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2194097170) | tags:  ritual,  colonists
+[![Image](https://img.shields.io/github/v/release/emipa606/BloodPactRitual?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2194097170) | colonists, ritual

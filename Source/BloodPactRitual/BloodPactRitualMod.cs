@@ -15,11 +15,6 @@ internal class BloodPactRitualMod : Mod
     private static string currentVersion;
 
     /// <summary>
-    ///     The private settings
-    /// </summary>
-    private BloodPactRitualSettings settings;
-
-    /// <summary>
     ///     Constructor
     /// </summary>
     /// <param name="content"></param>
@@ -37,11 +32,11 @@ internal class BloodPactRitualMod : Mod
     {
         get
         {
-            settings ??= GetSettings<BloodPactRitualSettings>();
+            field ??= GetSettings<BloodPactRitualSettings>();
 
-            return settings;
+            return field;
         }
-        set => settings = value;
+        set;
     }
 
     /// <summary>
@@ -57,11 +52,11 @@ internal class BloodPactRitualMod : Mod
     ///     The settings-window
     ///     For more info: https://rimworldwiki.com/wiki/Modding_Tutorials/ModSettings
     /// </summary>
-    /// <param name="rect"></param>
-    public override void DoSettingsWindowContents(Rect rect)
+    /// <param name="inRect"></param>
+    public override void DoSettingsWindowContents(Rect inRect)
     {
         var listing_Standard = new Listing_Standard();
-        listing_Standard.Begin(rect);
+        listing_Standard.Begin(inRect);
         listing_Standard.Gap();
         listing_Standard.CheckboxLabeled("BloodPact_Setting_Revolt_Title".Translate(), ref Settings.AllowRevolt,
             "BloodPact_Setting_Revolt_Desc".Translate());

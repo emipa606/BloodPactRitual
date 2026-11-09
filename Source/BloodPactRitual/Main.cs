@@ -11,7 +11,7 @@ using Verse;
 namespace Blood_Pact_Ritual.BloodPactRitual;
 
 [StaticConstructorOnStartup]
-class Main
+static class Main
 {
     static Main()
     {
@@ -55,7 +55,7 @@ class Main
             }
         }
 
-        xml.Root.Element("BloodPactRitual")?.Remove();
+        xml.Root?.Element("BloodPactRitual")?.Remove();
         xml.Save(hugsLibConfig);
 
         Log.Message("[BloodPactRitual]: Imported old HugLib-settings");

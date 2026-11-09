@@ -8,12 +8,12 @@ public class DamageWorkerRitualBloodPact : DamageWorker
 {
     private const int PactDamage = 1;
 
-    public override DamageResult Apply(DamageInfo dinfo, Thing thing)
+    public override DamageResult Apply(DamageInfo dinfo, Thing victim)
     {
-        var res = BloodPactRitual.TryBloodPact(thing as Pawn, dinfo.Instigator as Pawn);
+        var res = BloodPactRitual.TryBloodPact(victim as Pawn, dinfo.Instigator as Pawn);
 
         // if nothing special happened, we do normal damages
-        return res ? ApplyPactDamage(dinfo, thing) : ApplyNormalDamage(dinfo, thing);
+        return res ? ApplyPactDamage(dinfo, victim) : ApplyNormalDamage(dinfo, victim);
     }
 
     private static DamageResult ApplyNormalDamage(DamageInfo dinfo, Thing thing)

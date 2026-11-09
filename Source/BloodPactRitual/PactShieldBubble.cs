@@ -4,7 +4,7 @@ using Verse;
 namespace Blood_Pact_Ritual.BloodPactRitual;
 
 [StaticConstructorOnStartup]
-public class PactShieldBubble
+public static class PactShieldBubble
 {
     private const int NumTick = 100;
     private static readonly Color FullColor = new(150, 0, 0);
@@ -36,7 +36,7 @@ public class PactShieldBubble
         }
 
         var toTargetPos = bonded.DrawPos - pawn.DrawPos;
-        var angle = toTargetPos.AngleFlat() - 90; //Vector2.Angle(toTargetPos.AngleFlat(), Vector2.right);
+        var angle = toTargetPos.AngleFlat() - 90;
 
         var instanceColor = FullColor;
         instanceColor.a *= alpha;
